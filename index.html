@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExamPrep AI | Free JAMB, WAEC &amp; NECO Practice Questions</title>
+<meta name="description" content="Practise JAMB, WAEC and NECO questions free. Fresh AI-generated questions in nine subjects, with an explanation for every answer. No sign-up, works on any phone.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0E2147">
+<link rel="canonical" href="https://examprep-ai.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ApexDynamics Solutions">
+<meta property="og:title" content="ExamPrep AI | Free JAMB, WAEC &amp; NECO Practice Questions">
+<meta property="og:description" content="Fresh AI-generated questions in nine subjects, with an explanation for every answer. Free every day, no sign-up.">
+<meta property="og:url" content="https://examprep-ai.vercel.app/">
+<meta property="og:image" content="https://apexdynamics-solutions.vercel.app/logo.jpg">
+<meta name="twitter:card" content="summary">
+
+<!--
+  EDIT BEFORE PUBLISHING (search for each text):
+  1. PAY_MONTH_LINK / PAY_SEASON_LINK - the two buy buttons open WhatsApp for now.
+     Replace each whole href with the Paystack product link for that plan.
+  2. Prices: N1,000 and N2,500 appear in the pricing section, FAQ and structured data.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ExamPrep AI",
+  "description": "Free JAMB, WAEC and NECO practice questions with an explanation for every answer.",
+  "url": "https://examprep-ai.vercel.app/",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any web browser",
+  "inLanguage": "en",
+  "offers": [
+    { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "NGN" },
+    { "@type": "Offer", "name": "Advanced Access, 1 month", "price": "1000", "priceCurrency": "NGN" },
+    { "@type": "Offer", "name": "Advanced Access, 3-month exam-season pass", "price": "2500", "priceCurrency": "NGN" }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "ApexDynamics Solutions",
+    "url": "https://apexdynamics-solutions.vercel.app/",
+    "email": "olurotimiugbana71@gmail.com",
+    "telephone": "+2348065209323"
+  }
+}
+</script>
+
+<style>
+:root{
+  --ink:#0E2147; --blue:#1E5FD0; --blue-dark:#1749A6; --page:#F4F7FC; --paper:#FFFFFF;
+  --red:#C0281F; --green:#14804A; --muted:#4F5C74; --line:#D5DFEF; --tint-green:#E8F6EE; --tint-red:#FCECEA;
+  --display:'Bricolage Grotesque','Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --pen:'Patrick Hand','Segoe Print','Bradley Hand',cursive;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin:0}
+p{margin:0}
+a{color:var(--blue)}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;z-index:10}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.on-dark :focus-visible{outline-color:#fff}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:6px;border:2px solid transparent;font:700 1rem/1 var(--body);text-decoration:none;cursor:pointer;text-align:center}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-dark)}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{background:#E6EDFB}
+.btn-outline-light{border-color:#fff;color:#fff;background:transparent}
+.btn-outline-light:hover{background:#fff;color:var(--ink)}
+.btn-small{min-height:40px;padding:0 16px;font-size:.95rem}
+
+/* header */
+.top{padding:16px 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand svg{width:28px;height:28px;flex:none}
+.brand strong{font:800 1.35rem/1 var(--display);letter-spacing:-.02em}
+.brand small{display:block;font:400 .78rem/1.2 var(--body);color:var(--muted);margin-top:3px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a.link{color:var(--ink);text-decoration:none;font-weight:700}
+.nav a.link:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* hero */
+.hero{padding:40px 0 84px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:64px;align-items:center}
+.hero h1{font-size:clamp(2.35rem,5.2vw,4rem)}
+.hero .lede{margin-top:22px;max-width:34em;font-size:1.15rem;color:var(--muted)}
+.hero .actions{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .fine{margin-top:18px;color:var(--muted);font-size:.95rem}
+
+.sheet-wrap{position:relative;isolation:isolate}
+.sheet-wrap::before{content:"";position:absolute;inset:0;background:#fff;border:1px solid var(--line);transform:rotate(-1.8deg) translate(-6px,6px);z-index:-1}
+.sheet{background:var(--paper);border:1px solid var(--line);padding:22px 24px 24px 60px;position:relative}
+.sheet::before{content:"";position:absolute;top:0;bottom:0;left:38px;width:4px;border-left:1px solid rgba(192,40,31,.75);border-right:1px solid rgba(192,40,31,.75)}
+.sheet-head{display:flex;justify-content:space-between;gap:12px;font-size:.95rem;color:var(--muted);padding-bottom:10px;border-bottom:3px double var(--red);margin-bottom:18px}
+.sheet-head b{color:var(--ink)}
+.q{font:700 1.3rem/1.35 var(--body)}
+.hint{margin-top:6px;color:var(--muted);font-size:.95rem}
+.opts{display:grid;gap:10px;margin-top:18px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;min-height:52px;padding:8px 14px 8px 10px;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:6px;font:400 1.05rem/1.3 var(--body);color:var(--ink);cursor:pointer}
+.opt:hover{border-color:var(--blue)}
+.bubble{flex:none;display:grid;place-items:center;width:32px;height:32px;border:2px solid var(--ink);border-radius:50%;font:700 .9rem/1 var(--body)}
+.opt .txt{flex:1}
+.mark{flex:none;width:26px;height:26px;opacity:0;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mark path{stroke-dasharray:1;stroke-dashoffset:1}
+.mark.tick{stroke:var(--green)}
+.mark.cross{stroke:var(--red)}
+.opt.show-tick .tick,.opt.show-cross .cross{opacity:1}
+.opt.show-tick .tick path,.opt.show-cross .cross path{stroke-dashoffset:0;transition:stroke-dashoffset .55s ease-out}
+.opt.is-picked .bubble{background:var(--ink);color:#fff}
+.opt.is-correct{border-color:var(--green);background:var(--tint-green)}
+.opt.is-wrong{border-color:var(--red);background:var(--tint-red)}
+.sheet.done .opt{cursor:default}
+.sheet.done .opt:not(.is-correct):not(.is-wrong){opacity:.6}
+.sheet.done .opt:hover{border-color:var(--line)}
+.sheet.done .opt.is-correct:hover{border-color:var(--green)}
+.sheet.done .opt.is-wrong:hover{border-color:var(--red)}
+.marking{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line)}
+.pen{font:400 1.7rem/1.15 var(--pen);color:var(--red)}
+.why{margin-top:6px}
+.after{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.linkbtn{background:none;border:0;padding:8px 4px;font:700 1rem var(--body);color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+
+/* sections */
+.band{padding:84px 0}
+.band h2{font-size:clamp(1.9rem,3.6vw,2.7rem);max-width:18em}
+.band .intro{margin-top:14px;max-width:38em;color:var(--muted);font-size:1.1rem}
+
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.steps li{border-top:3px solid var(--ink);padding-top:18px}
+.steps .n{display:block;font:800 3.2rem/1 var(--display);color:var(--blue);margin-bottom:14px}
+.steps h3{font-size:1.35rem;margin-bottom:8px}
+.steps p{color:var(--muted)}
+
+.feat{margin:44px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 64px}
+.feat div{border-top:1px solid var(--line);padding:22px 0 26px}
+.feat dt{font:800 1.25rem/1.2 var(--display);letter-spacing:-.01em;margin-bottom:6px}
+.feat dd{margin:0;color:var(--muted);max-width:32em}
+
+.plans{margin-top:44px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;align-items:stretch}
+.plan{display:flex;flex-direction:column;border-top:4px solid var(--ink);padding:20px 0 0}
+.plan.featured{border-top-color:var(--blue);background:#fff;padding:20px 24px 24px;margin-top:-1px}
+.plan h3{font-size:1.4rem}
+.plan .price{margin-top:12px;font:800 2.5rem/1 var(--display);letter-spacing:-.03em}
+.plan .price small{font:400 1rem var(--body);color:var(--muted);letter-spacing:0}
+.plan .for{margin-top:8px;color:var(--muted)}
+.plan ul{list-style:none;margin:18px 0 26px;padding:0;display:grid;gap:10px}
+.plan li{position:relative;padding-left:28px}
+.plan li::before{content:"";position:absolute;left:2px;top:.42em;width:11px;height:6px;border-left:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(-45deg)}
+.plan .btn{margin-top:auto}
+.note-line{margin-top:26px;color:var(--muted);font-size:.95rem}
+
+.dark{background:var(--ink);color:#fff}
+.dark .intro{color:#C9D5EE}
+.schools .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:64px;align-items:start}
+.schools h2{max-width:14em}
+.schools .actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}
+.give{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.give li{padding:18px 0;border-top:1px solid rgba(255,255,255,.28)}
+.give li:last-child{border-bottom:1px solid rgba(255,255,255,.28)}
+.give b{display:block;font:800 1.15rem/1.2 var(--display);margin-bottom:4px}
+.give span{color:#C9D5EE}
+
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:700 1.1rem/1.35 var(--body)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font:400 1.8rem/1 var(--body);color:var(--blue)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 0 22px;color:var(--muted);max-width:40em}
+
+.closing{padding:76px 0;text-align:left}
+.closing .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.closing h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+
+footer{padding:48px 0 40px}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px}
+footer strong{font:800 1.2rem/1.2 var(--display)}
+footer p{color:#C9D5EE;margin-top:8px;max-width:34em}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{color:#fff}
+footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.28);padding-top:20px;font-size:.92rem;color:#C9D5EE}
+
+@media (max-width:900px){
+  .hero .wrap,.schools .wrap,footer .wrap{grid-template-columns:minmax(0,1fr);gap:48px}
+  .steps,.plans{grid-template-columns:minmax(0,1fr);gap:32px}
+  .feat{grid-template-columns:minmax(0,1fr)}
+  .nav a.link{display:none}
+  .band{padding:64px 0}
+  .hero{padding:24px 0 64px}
+  .plan.featured{padding:20px 20px 24px}
+}
+@media (max-width:480px){
+  .sheet{padding:18px 16px 20px 44px}
+  .sheet::before{left:28px}
+  .q{font-size:1.15rem}
+  .brand small{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .opt.show-tick .tick path,.opt.show-cross .cross path{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="ExamPrep AI home">
+      <svg viewBox="0 0 28 28" fill="none" stroke="#C0281F" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15l7 7L24 5"/></svg>
+      <span><strong>ExamPrep AI</strong><small>by ApexDynamics Solutions</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#how">How it works</a>
+      <a class="link" href="#pricing">Pricing</a>
+      <a class="link" href="#schools">For schools</a>
+      <a class="link" href="#faq">FAQ</a>
+      <a class="btn btn-primary btn-small" href="https://bit.ly/jamb-waec-cbt-app">Start free practice</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Practise JAMB, WAEC and NECO questions. Get every answer marked.</h1>
+      <p class="lede">Fresh questions in nine subjects, written by AI to follow the exam syllabus. After each answer you see why it was right or wrong. Free every day, with no sign-up.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://bit.ly/jamb-waec-cbt-app">Start free practice</a>
+        <a class="btn btn-ghost" href="#schools">Run a pilot at your school</a>
+      </div>
+      <p class="fine">Works in any phone browser. Nothing to download.</p>
+    </div>
+
+    <div class="sheet-wrap">
+      <div class="sheet" id="demo">
+        <div class="sheet-head"><span>Question 1 of 5</span><b>Mathematics</b></div>
+        <p class="q" id="q-text">Find the area of a circle with radius 7 cm. (Use &pi; = 3.14)</p>
+        <p class="hint" id="hint">Pick an answer to see how it is marked.</p>
+
+        <div class="opts" role="group" aria-labelledby="q-text">
+          <button type="button" class="opt" data-key="A"><span class="bubble">A</span><span class="txt">153.86 cm&sup2;</span>
+            <svg class="mark tick" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 13l6 6L21 5"/></svg>
+            <svg class="mark cross" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 5l14 14M19 5L5 19"/></svg></button>
+          <button type="button" class="opt" data-key="B"><span class="bubble">B</span><span class="txt">154.0 cm&sup2;</span>
+            <svg class="mark tick" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 13l6 6L21 5"/></svg>
+            <svg class="mark cross" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 5l14 14M19 5L5 19"/></svg></button>
+          <button type="button" class="opt" data-key="C"><span class="bubble">C</span><span class="txt">141.6 cm&sup2;</span>
+            <svg class="mark tick" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 13l6 6L21 5"/></svg>
+            <svg class="mark cross" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 5l14 14M19 5L5 19"/></svg></button>
+          <button type="button" class="opt" data-key="D"><span class="bubble">D</span><span class="txt">157.1 cm&sup2;</span>
+            <svg class="mark tick" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 13l6 6L21 5"/></svg>
+            <svg class="mark cross" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M5 5l14 14M19 5L5 19"/></svg></button>
+        </div>
+
+        <div class="marking" id="marking" hidden aria-live="polite">
+          <p class="pen" id="pen"></p>
+          <p class="why">Area = &pi;r&sup2; = 3.14 &times; 7&sup2; = 3.14 &times; 49 = 153.86 cm&sup2;. The correct answer is A.</p>
+          <div class="after">
+            <a class="btn btn-primary btn-small" href="https://bit.ly/jamb-waec-cbt-app">Practise more questions</a>
+            <button type="button" class="linkbtn" id="again">Try this question again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 id="how-h">How a practice session works</h2>
+    <ol class="steps">
+      <li><span class="n" aria-hidden="true">1</span><h3>Choose what to practise</h3><p>Pick the exam, subject, topic and difficulty. Leave the topic blank for general coverage.</p></li>
+      <li><span class="n" aria-hidden="true">2</span><h3>Answer, then read the marking</h3><p>Each answer is marked straight away with a short explanation, so you learn from every mistake.</p></li>
+      <li><span class="n" aria-hidden="true">3</span><h3>Review the whole quiz</h3><p>At the end, see every question with your answer and the correct one. The questions you missed open first.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0" aria-labelledby="feat-h">
+  <div class="wrap">
+    <h2 id="feat-h">Built for exam practice</h2>
+    <dl class="feat">
+      <div><dt>Fresh questions every time</dt><dd>Questions are generated each time you start, so you practise the topic instead of memorising a fixed list.</dd></div>
+      <div><dt>Explanations that teach</dt><dd>Every question comes with a short explanation of why the answer is right.</dd></div>
+      <div><dt>Three exams, nine subjects</dt><dd>JAMB (UTME), WAEC and NECO. Mathematics, English Language, Physics, Chemistry, Biology, Economics, Government, Literature in English and Financial Accounting.</dd></div>
+      <div><dt>Works on any phone</dt><dd>Open it in your browser. There is no app to download and no account to create.</dd></div>
+      <div><dt>Free every day</dt><dd>Get 15 free questions a day. Advanced Access adds longer quizzes with no daily limit.</dd></div>
+      <div><dt>Made in Nigeria</dt><dd>Built by ApexDynamics Solutions for Nigerian students and the schools that prepare them.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="band" id="pricing" style="padding-top:0" aria-labelledby="price-h">
+  <div class="wrap">
+    <h2 id="price-h">Free to start. Upgrade when you need more.</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="price">&#8358;0</p>
+        <p class="for">For everyday practice.</p>
+        <ul>
+          <li>15 questions a day, 5 per quiz</li>
+          <li>All nine subjects and three exams</li>
+          <li>Explanations and a full answer review</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://bit.ly/jamb-waec-cbt-app">Start free practice</a>
+      </div>
+
+      <div class="plan featured">
+        <h3>Advanced Access</h3>
+        <p class="price">&#8358;1,000 <small>per month</small></p>
+        <p class="for">Or &#8358;2,500 for a 3-month exam-season pass. That is &#8358;833 a month.</p>
+        <ul>
+          <li>Quizzes of 40 to 50 questions</li>
+          <li>No daily question limit</li>
+          <li>Your license key is sent by email or WhatsApp within a few hours of payment</li>
+        </ul>
+        <a class="btn btn-primary" data-pay="PAY_SEASON_LINK" href="https://wa.me/2348065209323?text=Hello%2C%20I%20would%20like%20the%203-month%20ExamPrep%20AI%20exam-season%20pass%20(N2%2C500).">Get the 3-month pass</a>
+        <a class="btn btn-ghost" style="margin-top:10px" data-pay="PAY_MONTH_LINK" href="https://wa.me/2348065209323?text=Hello%2C%20I%20would%20like%201%20month%20of%20ExamPrep%20AI%20Advanced%20Access%20(N1%2C000).">Get 1 month</a>
+      </div>
+
+      <div class="plan">
+        <h3>For schools</h3>
+        <p class="price">From &#8358;25,000 <small>per term</small></p>
+        <p class="for">For a class, a year group or a whole school.</p>
+        <ul>
+          <li>Free pilot first, with one SS3 class</li>
+          <li>Licences for 40, 100 or 300 students</li>
+          <li>Setup help and support by WhatsApp</li>
+        </ul>
+        <a class="btn btn-ghost" href="#schools">See the school pilot</a>
+      </div>
+    </div>
+    <p class="note-line">All prices are in Nigerian naira. Pay by card, bank transfer or USSD through Paystack. If a payment goes through and you receive no key, message us on WhatsApp and we will sort it out.</p>
+  </div>
+</section>
+
+<section class="band dark on-dark schools" id="schools" aria-labelledby="school-h">
+  <div class="wrap">
+    <div>
+      <h2 id="school-h">Run a free pilot at your school</h2>
+      <p class="intro">Give one SS3 class two to three weeks of full access at no cost. We show your teachers how it works, check in each week, and ask for honest feedback. If it helps your students, you choose a per-term licence.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="https://wa.me/2348065209323?text=Hello%2C%20I%20would%20like%20to%20book%20a%20free%20ExamPrep%20AI%20pilot%20for%20our%20school.">Book a free pilot on WhatsApp</a>
+        <a class="btn btn-outline-light" href="mailto:olurotimiugbana71@gmail.com?subject=ExamPrep%20AI%20school%20pilot">Email us</a>
+      </div>
+    </div>
+    <ul class="give">
+      <li><b>A free two to three week trial</b><span>One SS3 class, no cost and no commitment.</span></li>
+      <li><b>Orientation for teachers and students</b><span>A short session to get the class started.</span></li>
+      <li><b>Weekly check-ins</b><span>We fix problems early and report back what we hear.</span></li>
+      <li><b>Founding-school discount</b><span>Schools that take part in the pilot get 20% off their first term.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <h2 id="faq-h">Questions people ask</h2>
+    <div class="faq" style="margin-top:36px">
+      <details><summary>Is it really free?</summary><p>Yes. You get 15 free questions every day in all nine subjects, with explanations. Advanced Access adds longer quizzes with no daily limit, from &#8358;1,000 a month.</p></details>
+      <details><summary>Do I need an account?</summary><p>No. Open the app and start. You only enter a license key if you buy Advanced Access.</p></details>
+      <details><summary>How accurate are the questions?</summary><p>The AI writes questions to follow the exam syllabus, but it can make mistakes. If a question looks wrong, check it with your teacher and tell us on WhatsApp so we can fix it.</p></details>
+      <details><summary>Is ExamPrep AI part of JAMB, WAEC or NECO?</summary><p>No. ExamPrep AI is an independent practice tool made by ApexDynamics Solutions. It is not affiliated with or endorsed by JAMB, WAEC or NECO.</p></details>
+      <details><summary>How do I get Advanced Access?</summary><p>Choose the 1-month plan or the 3-month exam-season pass and pay. Use the email you want the key tied to. We send the license key to you within a few hours. Open the app, enter that email and key in the Advanced Access panel, and select Verify key.</p></details>
+      <details><summary>Can my school use it?</summary><p>Yes. Start with a free pilot for one class. Paid licences are priced per term by the number of students. There is no teacher dashboard or per-student tracking yet, so teachers can ask students to share their scores in a class group.</p></details>
+      <details><summary>Does it work offline?</summary><p>No. You need an internet connection to generate questions.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="close-h" style="background:#E8F0FD">
+  <div class="wrap">
+    <h2 id="close-h">Start with a free quiz.</h2>
+    <a class="btn btn-primary" href="https://bit.ly/jamb-waec-cbt-app">Start free practice</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="dark on-dark">
+  <div class="wrap">
+    <div>
+      <strong>Designed by ApexDynamics Solutions</strong>
+      <p>Practical software built in Nigeria. See our other tools on the main site.</p>
+      <p><a href="https://apexdynamics-solutions.vercel.app/">All ApexDynamics tools</a></p>
+    </div>
+    <ul>
+      <li>Email: <a href="mailto:olurotimiugbana71@gmail.com">olurotimiugbana71@gmail.com</a></li>
+      <li>WhatsApp: <a href="https://wa.me/2348065209323">+234 806 520 9323</a></li>
+      <li>Telephone: <a href="tel:+2348065209323">+234 806 520 9323</a></li>
+      <li>Telegram: <a href="https://t.me/rotimiugbana">@rotimiugbana</a></li>
+      <li>Telegram channel: <a href="https://t.me/apexdynamicssolutions">ApexDynamics Solutions</a></li>
+    </ul>
+    <p class="legal">ExamPrep AI is an independent practice tool and is not affiliated with JAMB, WAEC or NECO. Questions are generated by AI and may contain mistakes. &copy; 2026 ApexDynamics Solutions.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var sheet = document.getElementById('demo');
+  var opts = sheet.querySelectorAll('.opt');
+  var marking = document.getElementById('marking');
+  var pen = document.getElementById('pen');
+  var hint = document.getElementById('hint');
+  var CORRECT = 'A';
+
+  function reset() {
+    sheet.classList.remove('done');
+    opts.forEach(function (o) {
+      o.classList.remove('is-picked', 'is-correct', 'is-wrong', 'show-tick', 'show-cross');
+      o.removeAttribute('aria-disabled');
+    });
+    marking.hidden = true;
+    hint.hidden = false;
+  }
+
+  function answer(key) {
+    if (sheet.classList.contains('done')) return;
+    sheet.classList.add('done');
+    hint.hidden = true;
+    opts.forEach(function (o) {
+      o.setAttribute('aria-disabled', 'true');
+      var k = o.getAttribute('data-key');
+      if (k === key) o.classList.add('is-picked');
+      if (k === CORRECT) o.classList.add('is-correct', 'show-tick');
+      if (k === key && key !== CORRECT) o.classList.add('is-wrong', 'show-cross');
+    });
+    pen.textContent = key === CORRECT ? 'Well done! Full marks.' : 'Not quite. Look at the working:';
+    marking.hidden = false;
+  }
+
+  opts.forEach(function (o) {
+    o.addEventListener('click', function () { answer(o.getAttribute('data-key')); });
+  });
+  document.getElementById('again').addEventListener('click', function () {
+    reset();
+    opts[0].focus();
+  });
+})();
+</script>
+</body>
+</html>
